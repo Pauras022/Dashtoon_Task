@@ -1,0 +1,32 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href= 
+"https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css"
+        rel="stylesheet"> 
+    <title>Comic Generator</title>
+</head>
+<body class="bg-gradient-to-b from-purple-500 to-indigo-600 min-h-screen flex items-center justify-center">
+    <div class="container mx-auto p-4 bg-white rounded shadow-md text-center">
+        <h1 class="text-5xl font-bold mb-4 text-gray-800">Comic Generator</h1>
+        <form id="comicForm" class="mb-4">
+            <textarea id="textInput" class="w-full h-20 p-2 border rounded mb-2" placeholder="Enter text for 10 comic panels"></textarea>
+            <button id="generateButton" type="submit" class="bg-green-500 text-white p-2 rounded relative">
+                <span class="flex items-center">
+                    <span id="buttonText" class="mr-2">Generate Comics</span>
+                    <svg id="loadingIcon" class="animate-spin h-5 w-5 text-white hidden" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 4v16m8-8H4"></path>
+                    </svg>
+                </span>
+            </button>
+        </form>
+        <div id="progress" class="hidden text-gray-600 mb-4">0 / 10 panels generated</div>
+        <div id="comicDisplay" class="flex flex-wrap -mx-2 justify-center">
+        </div>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>

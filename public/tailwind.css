@@ -1,0 +1,43 @@
+/* public/styles.css */
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+
+/* body {
+    font-family: 'Arial', sans-serif;
+}
+
+.container {
+    max-width: 600px;
+    margin: auto;
+    text-align: center;
+}
+
+textarea {
+    width: 100%;
+    height: 100px;
+    margin-bottom: 10px;
+}
+
+button {
+    cursor: pointer;
+}
+
+#progress {
+    font-size: 16px;
+}
+
+#comicDisplay {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#comicDisplay img {
+    width: 100px;
+    height: 100px;
+    margin: 5px;
+}
+.hidden {
+    display: none;
+} */
